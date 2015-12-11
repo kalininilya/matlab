@@ -1,0 +1,10 @@
+n=input('n=')
+A=zeros(n)
+[B,i]=sort(A)
+A=flipud(i)
+B=tril(A)
+d=eig(B)
+det = prod(d)
+B(n-1, n-1) = 0
+d=eig(B)
+det=prod(d)
